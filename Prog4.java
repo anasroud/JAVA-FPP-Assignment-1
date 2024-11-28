@@ -18,7 +18,6 @@ public class Main {
                 }
             }
 
-            // remove null values with using only copyOf method from Arrays class and not using any other method
             if (isUnique) {
                 uniqueArray[index++] = str;
             }
@@ -34,11 +33,12 @@ public class Main {
         int size = scanner.nextInt();
         String[] altArray = new String[size];
         System.out.println("Enter the elements of the array:");
+
         for (int i = 0; i < size; i++) {
             altArray[i] = scanner.next();
         }
+
         String[] uniqueArray = uniqueStringArray(altArray);
-        // now print the unique elements
         System.out.println("The unique elements in the array are:");
         for (String str : uniqueArray) {
             System.out.println(str);
